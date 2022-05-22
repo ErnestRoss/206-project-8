@@ -97,33 +97,70 @@ textarea {
 
 
 html {
-  background-color: black;
+    background-color: #000;
+    background: url(../img/pennypack1200w.png) no-repeat center center fixed;
+    background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 body {
+  background:rgba(0,0,0,0.7);
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
+  color: #fff;
+}
+
+header,
+footer {
+  height: 80px;
+  width: 100%;
+}
+
+main {
+    height: 300px;
+    width: 100%;
+  }
+
+  header,
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+header span {
+    color: hotpink;
 }
 
 .wrapper {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   font-weight: 700;
   text-align: justify;
+  width: 100%;
 }
 
 .div-1, .div-2, .div-3 {
   color: #fff;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   line-height: 1.5em;
-  font-size: 1.6em;
-  padding: 0% 2%;
+  font-size: 1.6rem;
+  padding: 0 1em; 
   width: 30%;
+  height: 200px;
 }
 
 .div-1, .div-2 {
